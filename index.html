@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kolobok</title>
+	<style>
+		.container {
+			width: 1000px;
+			margin: 0 auto;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="text">
+			<svg width="500" height="100" xmlns="http://www.w3.org/2000/svg">
+				<path id="test-path" fill="none" stroke="cyan" stroke-width="1"
+					d="M3.858,58.607 c16.784-5.985,33.921-10.518,51.695-12.99c50.522-7.028,101.982,0.51,151.892,8.283c17.83,2.777,35.632,5.711,53.437,8.628 c51.69,8.469,103.241,11.438,155.3,3.794c53.714-7.887,106.383-20.968,159.374-32.228c11.166-2.373,27.644-7.155,39.231-4.449" />
+				<use xlink:href="#test-path" />
+				<text x="10" y="100" font-size="32" fill="white" stroke="red" stroke-width="1px">
+					<textPath xlink:href="#test-path">
+						Здесь замысловатый заголовок
+					</textPath>
+				</text>
+			</svg>
+		</div>
+		<div class="tv">
+			<svg width="410" height="300" xmlns="http://www.w3.org/2000/svg">
+				<!--       Ножки телевизора -->
+				<rect x="50" y="255" width="10" height="30" rx="5" ry="5" fill="black" />
+				<rect x="330" y="255" width="10" height="30" rx="5" ry="5" fill="black" />
+				<!--  Телевизор -->
+				<rect x="10" y="10" width="400" height="250" rx="35" ry="35" fill="#5F5F5F" />
+				<!--      Экран (голубой квадрат) -->
+				<rect x="25" y="25" width="330" height="220" rx="25" ry="25" fill="#87CEFA" />
+				<!-- Панель кнопок -->
+				<rect x="365" y="50" width="30" height="60" rx="10" ry="10" fill="black" />
+				<!-- Красная кнопка -->
+				<rect x="370" y="60" width="20" height="10" rx="2" ry="2" fill="red" />
+				<!-- Желтая кнопка -->
+				<rect x="370" y="75" width="20" height="10" rx="2" ry="2" fill="yellow" />
+				<!-- Зеленая кнопка -->
+				<rect x="370" y="90" width="20" height="10" rx="2" ry="2" fill="lime" />
+				<!-- Регулятор громкости -->
+				<circle cx="380" cy="220" r="10" fill="black" />
+
+				<!--       Круги в центре экрана -->
+				<circle cx="190" cy="135" r="50" fill="red" />
+				<circle cx="190" cy="135" r="40" fill="white" />
+				<circle cx="190" cy="135" r="30" fill="red" />
+				<circle cx="190" cy="135" r="20" fill="white" />
+				<circle cx="190" cy="135" r="10" fill="red" />
+
+			</svg>
+		</div>
+	</div>
+
+</body>
+
+</html>
